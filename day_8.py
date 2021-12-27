@@ -7,15 +7,8 @@ def day_8(data):
     result = 0
     for elem in data:
         for e in elem.split(' '):
-            if(len(e) == 2):
-                result += 1
-            elif(len(e) == 3):
-                result += 1
-            
-            elif(len(e) == 4):
-                result += 1
-
-            elif(len(e) == 7):
+            if(len(e) in [2, 3, 4, 7])
+           
                 result += 1
     return result
 
